@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- Wichtige Meta Daten -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS
+  ============================================================================================= -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min%20(1).css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" />
+
+</head>
+
+<body>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="container" align="center">
+        <img class="mr-2 mb-3" src="assets/img/logo.jpg.png" height="100" alt="Logo">
+        <h3>Hessische Lehrkräfteakademie</h3>
+        <h4>Wiesbaden</h4>
+    </div>
+
+
+    <div class="container text-uppercase">
+        <div class="stepwizard">
+            <div class="stepwizard-row setup-panel">
+                <div class="stepwizard-step">
+                    <a href="#step-1" type="button" class="btn btn-default btn-circle" disabled="disabled">1</a>
+                    <p>Anfangen</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-1" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                    <p>Schritt 1</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-2" type="button" class="btn btn-primary btn-circle">3</a>
+                    <p>Schritt 2</p>
+
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                    <p>Schritt 3</p>
+                </div>
+            </div>
+        </div>
+        <form role="form">
+
+
+            <div class="row setup-content" id="step-2">
+                <div class="col-xs-12">
+                    <div class="col-md-12">
+
+                        <hr>
+                        <h1 class="text-center">Raum wählen</h1>
+                        <hr>
+
+
+
+                        <!-- start Table-->
+                        <table class="table table-hover display datataable" id="example" style="width:100%" role="grid" aria-describedby="example-info">
+
+                            <!--start Table head-->
+                            <thead class="table-warning">
+                                <tr>
+                                    <th>Raum</th>
+                                    <th>Bildschirm</th>
+                                    <th>Flipchart</th>
+                                    <th>Whiteboard</th>
+                                    <th>Laptop</th>
+                                    <th>Beamer</th>
+                                    <th>Sitzplatz</th>
+                                </tr>
+                            </thead>
+                            <!-- End Table head-->
+
+                            <!--start Table body-->
+                            <tbody>
+                                <tr class="table-info">
+                                    <th scope="row">1</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td style="color: red">&#10004;</td>
+                                    <td style="color: red">&#10004;</td>
+                                    <td style="color: red">&#10004;</td>
+                                    <td style="color: red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td>36</td>
+                                </tr>
+                                <tr class="table-info">
+                                    <th scope="row">3</th>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td>41</td>
+                                </tr>
+                                <tr class="table-info">
+                                    <th scope="row">5</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td>39</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td>37</td>
+                                </tr>
+                                <tr class="table-info">
+                                    <th scope="row">7</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td>52</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr class="table-info">
+                                    <th scope="row">9</th>
+                                    <td style="color : red">&#10004;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10006;</td>
+                                    <td style="color : red">&#10004;</td>
+                                    <td>35</td>
+                                </tr>
+                            </tbody>
+                            <!--End Table body-->
+
+                            <!--start Table foot-->
+                            <tfoot class="table-warning">
+                                <tr>
+                                    <th>Raum</th>
+                                    <th>Bildschirm</th>
+                                    <th>Flipchart</th>
+                                    <th>Whiteboard</th>
+                                    <th>Laptop</th>
+                                    <th>Beamer</th>
+                                    <th>Sitzplatz</th>
+                                </tr>
+                                <!-- Start Filter-->
+                                <tr>
+                                    <!--Strat Raum -->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </th>
+                                    <!--End Raum -->
+
+                                    <!--start Bildschrim -->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="&#10004;">&#10004;</option>
+                                            <option value="&#10006;">&#10006;</option>
+                                        </select>
+                                    </th>
+                                    <!--end Bildschrim -->
+
+                                    <!--start Flipchart -->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="&#10004;">&#10004;</option>
+                                            <option value="&#10006;">&#10006;</option>
+                                        </select>
+                                    </th>
+                                    <!--End Flipchart -->
+
+                                    <!--start Whitboard -->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="&#10004;">&#10004;</option>
+                                            <option value="&#10006;">&#10006;</option>
+                                        </select>
+                                    </th>
+                                    <!--End Whitboard -->
+
+                                    <!--start Laptop -->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="&#10004;">&#10004;</option>
+                                            <option value="&#10006;">&#10006;</option>
+                                        </select>
+                                    </th>
+                                    <!--End Laptop -->
+
+                                    <!--start Beamer-->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="&#10004;">&#10004;</option>
+                                            <option value="&#10006;">&#10006;</option>
+                                        </select>
+                                    </th>
+                                    <!--End Beamer -->
+
+                                    <!--start Sitzplatz-->
+                                    <th rowspan="1" colspan="1">
+                                        <select>
+                                            <option value></option>
+                                            <option value="&#10004;">&#10004;</option>
+                                            <option value="&#10006;">&#10006;</option>
+                                        </select></th>
+                                    <!--End Sitzplatz -->
+
+                                </tr>
+                                <!-- End Filter-->
+                            </tfoot>
+                            <!-- End Table foot-->
+
+
+                        </table>
+                        <!-- End Table-->
+                        <div class="form-group text-center">
+                            <form>
+                                <label>Raum wählen
+                                    <select id="auswahl" class="form-control" name="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                        <option value="">9</option>
+                                    </select>
+                                </label>
+                            </form>
+                        </div>
+
+
+
+                        <a class="btn btn-success btn-lg pull-left" href="projekt1.html" type="submit" role="button">zurück</a>
+                        <a class="btn btn-success btn-lg pull-right" href="projekt3.html" type="submit" role="button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Scripts
+  ============================================================================================= -->
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                "footerCallback": function(row, data, start, end, display) {
+                    var api = this.api(),
+                        data;
+
+                    // Remove the formatting to get integer data for summation
+                    var intVal = function(i) {
+                        return typeof i === 'string' ?
+                            i.replace(/[\$,]/g, '') * 1 :
+                            typeof i === 'number' ?
+                            i : 0;
+                    };
+
+                    // Total over all pages
+                    total = api
+                        .column(4)
+                        .data()
+                        .reduce(function(a, b) {
+                            return intVal(a) + intVal(b);
+                        }, 0);
+
+                    // Total over this page
+                    pageTotal = api
+                        .column(4, {
+                            page: 'current'
+                        })
+                        .data()
+                        .reduce(function(a, b) {
+                            return intVal(a) + intVal(b);
+                        }, 0);
+
+                    // Update footer
+                    $(api.column(4).footer()).html(
+                        '$' + pageTotal + ' ( $' + total + ' total)'
+                    );
+                }
+            });
+        });
+    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-datatable.min.js"></script>
+    <!-- Popper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body></html>
